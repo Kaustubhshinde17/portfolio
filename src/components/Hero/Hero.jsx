@@ -51,6 +51,25 @@ export default function Hero({ isDark }) {
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
+  // 3D Mouse Parallax
+  const [coords, setCoords] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const { clientX, clientY } = e;
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      const x = (clientX / width) - 0.5;
+      const y = (clientY / height) - 0.5;
+      setCoords({ x, y });
+    };
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
+  const rotateX = -coords.y * 25; // Tilt up/down
+  const rotateY = coords.x * 25;  // Tilt left/right
+
   return (
     <section
       id="home"
@@ -187,13 +206,19 @@ export default function Hero({ isDark }) {
           </motion.div>
         </div>
 
-        {/* Profile Avatar Column */}
-        <div className="lg:col-span-5 flex justify-center z-10">
+        {/* Profile Avatar Column with 3D Parallax & Telemetry */}
+        <div className="lg:col-span-5 flex flex-col items-center justify-center gap-6 z-10">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="relative w-64 h-64 sm:w-80 sm:h-80"
+            style={{ 
+              rotateX: rotateX, 
+              rotateY: rotateY, 
+              transformStyle: 'preserve-3d',
+              perspective: 1000 
+            }}
+            className="relative w-64 h-64 sm:w-80 sm:h-80 cursor-grab active:cursor-grabbing"
           >
             {/* Ambient background glow ring */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-violet-600 via-indigo-500 to-pink-500 blur-md scale-[1.03] animate-pulse -z-10 opacity-70" />
@@ -225,6 +250,31 @@ export default function Hero({ isDark }) {
                   <circle cx="12" cy="12" r="1.5" className="fill-violet-400" />
                 </svg>
               </div>
+            </div>
+          </motion.div>
+
+          {/* Telemetry HUD Widget */}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="w-full max-w-xs glass-panel p-4 rounded-xl border border-violet-500/20 shadow-lg text-[10px] font-mono text-slate-400 dark:text-violet-400/90 leading-normal"
+          >
+            <div className="flex items-center justify-between border-b border-violet-500/10 pb-1.5 mb-1.5">
+              <span className="font-bold text-violet-500 tracking-wider">SYSTEM TELEMETRY</span>
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+            </div>
+            <div className="grid grid-cols-2 gap-y-1">
+              <div>[+] STATUS:</div>
+              <div className="text-emerald-400 text-right">ONLINE</div>
+              <div>[+] ENGINE:</div>
+              <div className="text-slate-300 dark:text-white text-right">REACT_VITE</div>
+              <div>[+] BACKEND:</div>
+              <div className="text-slate-300 dark:text-white text-right">SPRING_BOOT_3</div>
+              <div>[+] DATABASE:</div>
+              <div className="text-slate-300 dark:text-white text-right">MYSQL_SYNC</div>
+              <div>[+] CORE:</div>
+              <div className="text-violet-300 text-right animate-pulse">GEMINI_3.5_OK</div>
             </div>
           </motion.div>
         </div>
