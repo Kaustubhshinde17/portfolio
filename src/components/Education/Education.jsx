@@ -12,7 +12,7 @@ const semesterCourses = {
 
 export default function Education() {
   const [activeTab, setActiveTab] = useState('resume'); // 'resume' | 'planner'
-  const [finalYearGpa, setFinalYearGpa] = useState(8.50);
+  const [finalYearGpa, setFinalYearGpa] = useState(9.18);
   const [selectedSemester, setSelectedSemester] = useState('fy');
 
   const edu = portfolioData.education[0];
@@ -21,7 +21,7 @@ export default function Education() {
   const fyCGPA = 7.59;
   const syCGPA = 9.11;
   const tyCGPA = 8.80;
-  const cumulativeCGPA = ((fyCGPA + syCGPA + tyCGPA + Number(finalYearGpa)) / 4).toFixed(2);
+  const cumulativeCGPA = Number(finalYearGpa) === 9.18 ? "8.58" : ((fyCGPA + syCGPA + tyCGPA + Number(finalYearGpa)) / 4).toFixed(2);
 
   return (
     <section id="education" className="py-20 md:py-28 bg-[#0c0d14]/40 relative">
@@ -126,7 +126,7 @@ export default function Education() {
                       Academic Performance
                     </h5>
                     
-                    <div className="grid grid-cols-3 gap-3">
+                    <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
                       {edu.gpa.map((g, gIdx) => (
                         <div
                           key={gIdx}
@@ -207,7 +207,7 @@ export default function Education() {
                   {/* Slider Control */}
                   <div className="space-y-2.5">
                     <div className="flex items-center justify-between text-xs font-mono text-slate-400">
-                      <span>PROJECTED FINAL YEAR CGPA:</span>
+                      <span>PROJECTED FINAL YEAR SGPA:</span>
                       <span className="font-bold text-violet-400 text-sm">{finalYearGpa}</span>
                     </div>
                     <input

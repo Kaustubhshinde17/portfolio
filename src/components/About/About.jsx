@@ -15,7 +15,7 @@ const timelineEvents = [
   { year: "2023", title: "Object-Oriented Programming", desc: "Dived deep into Java SE and databases. Developed skills in SQL database design and structured software programming." },
   { year: "2024", title: "Full Stack Exploration", desc: "Learned React, Tailwind CSS, Spring Boot, and Spring Data JPA. Built end-to-end full-stack e-commerce project (ShopEase)." },
   { year: "2025", title: "Embedded & Edge AI Systems", desc: "Created the AI Autonomous RC Vehicle, co-authored CAN Bus research paper, and presented at SPPU capstone exhibition." },
-  { year: "2026", title: "Graduation & Engineering Launch", desc: "Completed degree with strong CGPA (9.11, 8.80) in core terms. Entering full-time software engineering roles." }
+  { year: "2026", title: "Graduation & Engineering Launch", desc: "Graduated B.E. Electronics & Telecommunication with a Cumulative CGPA of 8.58 (First Class with Distinction) and a stellar Final Year SGPA of 9.18." }
 ];
 
 export default function About() {

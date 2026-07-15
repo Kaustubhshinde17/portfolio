@@ -181,9 +181,9 @@ export default function Projects() {
     } else if (q.includes('project') || q.includes('shopease') || q.includes('car') || q.includes('rc vehicle')) {
       reply = "His prime projects are ShopEase (Spring Boot/React e-commerce engine) and an AI Autonomous RC Vehicle powered by a Raspberry Pi 4, Flask, OpenCV, and Gemini APIs.";
     } else if (q.includes('gpa') || q.includes('education') || q.includes('college') || q.includes('degree')) {
-      reply = "He earned his Bachelor of Engineering in Electronics & Telecommunication from Savitribai Phule Pune University. Term CGPAs: 7.59 (FY), 9.11 (SY), 8.80 (TY).";
+      reply = "He earned his Bachelor of Engineering in Electronics & Telecommunication from Savitribai Phule Pune University, graduating with an overall CGPA of 8.58 (First Class with Distinction). Term GPAs: 7.59 (FY CGPA), 9.11 (SY CGPA), 8.80 (TY CGPA), and 9.18 (Final Year SGPA).";
     } else if (q.includes('contact') || q.includes('email') || q.includes('phone') || q.includes('social')) {
-      reply = "You can email him at skaustubh652@gmail.com, call +91 95453 58514, or visit his GitHub (Kaustubhshinde17) and LinkedIn (kaustubh-shinde03).";
+      reply = "You can email him at kaustubh.shinde@example.com, call +91 98765 43210, or visit his GitHub (Kaustubhshinde17) and LinkedIn (kaustubh-shinde03).";
     } else if (q.includes('certification') || q.includes('verify')) {
       reply = "He holds certifications in: Java Masterclass (Udemy), React Developer (Meta), and SQL Advanced Database (HackerRank).";
     } else if (q.includes('hello') || q.includes('hi') || q.includes('hey')) {

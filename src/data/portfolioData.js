@@ -5,14 +5,14 @@ export const portfolioData = {
     headline: "Electronics & Telecommunication Engineer | Java Full Stack Developer | React Developer | AI & Embedded Systems Enthusiast",
     bio: "A passionate software developer with experience building full-stack web applications, AI-powered embedded systems, and scalable Java applications. I enjoy solving real-world problems using modern technologies and continuously learning new tools.",
     location: "Pune, Maharashtra, India",
-    email: "skaustubh652@gmail.com",
-    phone: "+91 95453 58514",
+    email: "kaustubh.shinde@example.com",
+    phone: "+91 98765 43210",
     resumeUrl: "/Kaustubh_Shinde_Resume.pdf",
     socials: {
       github: "https://github.com/Kaustubhshinde17", // Corrected GitHub profile
       linkedin: "https://www.linkedin.com/in/kaustubh-shinde03",
       dockerhub: "https://hub.docker.com/u/kaustubhshinde03",
-      email: "mailto:skaustubh652@gmail.com" // Corrected Email link
+      email: "mailto:kaustubh.shinde@example.com" // Corrected Email link
     },
     aboutMe: [
       "Electronics & Telecommunication Engineering graduate from ISBM College of Engineering, Savitribai Phule Pune University.",
@@ -37,7 +37,9 @@ export const portfolioData = {
       gpa: [
         { term: "FY CGPA", score: "7.59" },
         { term: "SY CGPA", score: "9.11" },
-        { term: "TY CGPA", score: "8.80" }
+        { term: "TY CGPA", score: "8.80" },
+        { term: "FINAL SGPA", score: "9.18" },
+        { term: "OVERALL CGPA", score: "8.58" }
       ],
       description: "Rigorous coursework in core electronics, signal processing, CAN Bus automotive networking, IoT design, and telecommunication principles, complemented by engineering mathematics and object-oriented programming foundations."
     }
