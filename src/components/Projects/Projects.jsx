@@ -35,7 +35,7 @@ export default function Projects() {
     { text: "Hi! I am Kaustubh's portfolio assistant. Ask me anything about his skills, projects, or education!", isUser: false }
   ]);
 
-  const filters = ['All', 'Full Stack', 'AI & Embedded', 'Frontend'];
+  const filters = ['All', 'AI & Embedded', 'Frontend'];
 
   const filteredProjects = activeFilter === 'All'
     ? portfolioData.projects
@@ -175,17 +175,17 @@ export default function Projects() {
     const q = userMsg.toLowerCase();
     
     if (q.includes('java') || q.includes('spring') || q.includes('backend') || q.includes('springboot')) {
-      reply = "Kaustubh is highly skilled in Java development and the Spring Ecosystem (Spring Boot, Spring Data JPA, MVC). He uses them to construct secure, scalable RESTful APIs.";
+      reply = "Kaustubh has strong hands-on development experience in Java, Spring Boot, Object-Oriented Programming, and SQL database design.";
     } else if (q.includes('react') || q.includes('frontend') || q.includes('tailwind') || q.includes('javascript')) {
-      reply = "On the frontend, he codes reactive architectures using React, Vite, Framer Motion, and Tailwind CSS. The dashboard interfaces you're playing with are built directly in React!";
-    } else if (q.includes('project') || q.includes('shopease') || q.includes('car') || q.includes('rc vehicle')) {
-      reply = "His prime projects are ShopEase (Spring Boot/React e-commerce engine) and an AI Autonomous RC Vehicle powered by a Raspberry Pi 4, Flask, OpenCV, and Gemini APIs.";
+      reply = "On the frontend, he builds responsive user interfaces using React, JavaScript, HTML5, CSS3 (Flexbox/Grid), and Vite.";
+    } else if (q.includes('project') || q.includes('amazon') || q.includes('car') || q.includes('rc vehicle') || q.includes('youtube') || q.includes('chatbot')) {
+      reply = "His projects include: 1) AI-Powered Autonomous RC Car (Raspberry Pi, Flask, OpenCV, Gemini API, GPIO), 2) Amazon Clone (Vanilla JS, HTML5, CSS3, Jasmine unit tests), 3) Responsive YouTube Clone, and 4) React Chatbot.";
     } else if (q.includes('gpa') || q.includes('education') || q.includes('college') || q.includes('degree')) {
-      reply = "He earned his Bachelor of Engineering in Electronics & Telecommunication from Savitribai Phule Pune University, graduating with an overall CGPA of 8.58 (First Class with Distinction). Term GPAs: 7.59 (FY CGPA), 9.11 (SY CGPA), 8.80 (TY CGPA), and 9.18 (Final Year SGPA).";
+      reply = "He earned his B.E. in Electronics & Telecommunication from Savitribai Phule Pune University (ISBM College of Engineering). Term GPAs: FY 7.59 | SY 9.11 | TY 8.80 | BE 9.18.";
     } else if (q.includes('contact') || q.includes('email') || q.includes('phone') || q.includes('social')) {
-      reply = "You can email him at kaustubh.shinde@example.com, call +91 98765 43210, or visit his GitHub (Kaustubhshinde17) and LinkedIn (kaustubh-shinde03).";
+      reply = "You can email him at kdshinde175@gmail.com, call +91 7385570673, or visit his GitHub (Kaustubhshinde17) and LinkedIn (kaustubh-shinde03).";
     } else if (q.includes('certification') || q.includes('verify')) {
-      reply = "He holds certifications in: Java Masterclass (Udemy), React Developer (Meta), and SQL Advanced Database (HackerRank).";
+      reply = "He holds certifications in: Java Programming Masterclass (Udemy), React Developer (HackerRank), and SQL Advanced (HackerRank).";
     } else if (q.includes('hello') || q.includes('hi') || q.includes('hey')) {
       reply = "Hello! I'm ready to answer any questions about Kaustubh's portfolio. What would you like to verify?";
     }
@@ -340,7 +340,7 @@ export default function Projects() {
 
                   <div className="space-y-3">
                     {[
-                      { id: 'shopease', label: 'ShopEase E-Commerce', icon: FiShoppingCart, desc: 'Simulate transactional logic and checkout sequences.' },
+                      { id: 'shopease', label: 'Amazon Clone E-Commerce', icon: FiShoppingCart, desc: 'Simulate storefront cart logic, delivery options & Jasmine tests.' },
                       { id: 'car', label: 'Autonomous RC Car HUD', icon: FiCpu, desc: 'Evaluate telemetry dashboard streams and vector paths.' },
                       { id: 'chatbot', label: 'Portfolio AI Assistant', icon: FiMessageSquare, desc: 'Consult the trained chatbot regarding portfolio specs.' }
                     ].map((play) => {
@@ -380,7 +380,7 @@ export default function Projects() {
                     {/* Left: Product Catalog */}
                     <div className="flex-1 space-y-4">
                       <div className="flex items-center justify-between">
-                        <h4 className="text-sm font-bold font-display text-slate-800 dark:text-white">ShopEase Dev Catalog</h4>
+                        <h4 className="text-sm font-bold font-display text-slate-800 dark:text-white">Amazon Storefront Catalog</h4>
                         <button 
                           onClick={() => setShowAdminPanel(!showAdminPanel)}
                           className="text-[10px] font-mono font-bold text-violet-500 flex items-center gap-1"

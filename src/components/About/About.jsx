@@ -4,18 +4,18 @@ import { portfolioData } from '../../data/portfolioData';
 import { FiBriefcase, FiCode, FiSearch, FiCompass, FiCalendar } from 'react-icons/fi';
 
 const roleBios = {
-  default: "A passionate software developer with experience building full-stack web applications, AI-powered embedded systems, and scalable Java applications. I enjoy solving real-world problems using modern technologies and continuously learning new tools.",
-  recruiter: "Hi there! I am Kaustubh, a developer who specializes in Java, Spring Boot, and React. I am based in Pune, India, and I'm ready to bring immediate value to your development team with clean code, solid REST APIs, and responsive React frontend skills. I'm actively seeking opportunities to build enterprise-scale solutions.",
-  techlead: "Hello! My development workflow prioritizes architectural scalability, strong OOP principles, and clean data modeling. I design Spring Boot backends, integrate JPA caching, build secure MySQL database schemas, and dockerize services to achieve seamless CI/CD. I'm highly comfortable bridging software stacks and physical hardware APIs.",
-  researcher: "Greetings! I focus on the intersection of Software Engineering and Intelligent IoT. I have co-authored an international research paper on CAN Bus protocols (ICETT 2026) and developed computer vision models using OpenCV to orchestrate autonomous edge decisions on Raspberry Pi controllers."
+  default: "Electronics & Telecommunication Engineer with hands-on development experience in Java, React and SQL, alongside applied AI and embedded-systems project work. Built an AI-powered autonomous vehicle combining computer vision, NLP and real-time control. Comfortable working across the stack and quickly picking up new frameworks and tools to solve real problems.",
+  recruiter: "Hi there! I am Kaustubh, an Electronics & Telecommunication Engineer with hands-on experience in Java, React, SQL, and embedded AI systems. I am based in Pune, India, and ready to bring immediate value to software and engineering teams with strong problem-solving skills and fast adaptation to new tools.",
+  techlead: "Hello! My development workflow prioritizes OOP principles, clean React functional component architectures, and solid SQL database queries. I have built voice-controlled AI agents on Raspberry Pi with Flask and OpenCV, alongside modular frontend storefronts and conversational interfaces.",
+  researcher: "Greetings! I focus on the intersection of Embedded Systems, Computer Vision, and Conversational AI. I co-authored an international research paper on CAN Bus protocols (ICETT-2026) and built an AI-powered autonomous RC vehicle integrating Gemini vision models and voice commands on a Raspberry Pi."
 };
 
 const timelineEvents = [
-  { year: "2022", title: "Engineering Foundations", desc: "Enrolled in Savitribai Phule Pune University for Electronics & Telecommunication. Mastered engineering math, physics, and basic programming logic." },
-  { year: "2023", title: "Object-Oriented Programming", desc: "Dived deep into Java SE and databases. Developed skills in SQL database design and structured software programming." },
-  { year: "2024", title: "Full Stack Exploration", desc: "Learned React, Tailwind CSS, Spring Boot, and Spring Data JPA. Built end-to-end full-stack e-commerce project (ShopEase)." },
-  { year: "2025", title: "Embedded & Edge AI Systems", desc: "Created the AI Autonomous RC Vehicle, co-authored CAN Bus research paper, and presented at SPPU capstone exhibition." },
-  { year: "2026", title: "Graduation & Engineering Launch", desc: "Graduated B.E. Electronics & Telecommunication with a Cumulative CGPA of 8.58 (First Class with Distinction) and a stellar Final Year SGPA of 9.18." }
+  { year: "2022", title: "Engineering Foundations", desc: "Enrolled in Savitribai Phule Pune University (SPPU) for B.E. in Electronics & Telecommunication Engineering." },
+  { year: "2023", title: "Java & Database Fundamentals", desc: "Mastered Object-Oriented Programming in Java and built advanced database query skills in SQL and MySQL." },
+  { year: "2024", title: "Web Architecture & UI Projects", desc: "Developed responsive Amazon and YouTube storefront clones using HTML5, CSS3 (Flexbox/Grid), vanilla JavaScript, and Jasmine unit testing." },
+  { year: "2025", title: "Applied AI & Embedded Systems", desc: "Built the AI-Powered Autonomous RC Vehicle using Raspberry Pi, OpenCV, Flask, and Gemini API. Co-authored CAN Bus research paper for ICETT-2026." },
+  { year: "2026", title: "Engineering Graduation", desc: "Graduating B.E. Electronics & Telecommunication with term GPAs: FY 7.59 | SY 9.11 | TY 8.80 | BE 9.18." }
 ];
 
 export default function About() {

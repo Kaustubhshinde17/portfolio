@@ -107,7 +107,7 @@ export default function Contact() {
       `[SYS] Formatting payload buffers...`,
       `[CRYPTO] Packing data block (${shellName.length + shellEmail.length + shellMessage.length} bytes)`,
       `[CRYPTO] Encrypting with RSA-4096 public key index...`,
-      `[NET] Dispatching secure SMTP relay sockets to kaustubh.shinde@example.com...`,
+      `[NET] Dispatching secure SMTP relay sockets to kdshinde175@gmail.com...`,
       `[SYS] Secure packet receipt: STATUS_OK. Server connection closed.`
     ];
 

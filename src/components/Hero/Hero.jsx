@@ -7,9 +7,9 @@ import { portfolioData } from '../../data/portfolioData';
 
 const roles = [
   "Electronics & Telecommunication Engineer",
-  "Java Full Stack Developer",
-  "React Developer",
-  "AI & Embedded Systems Enthusiast"
+  "Java & React Developer",
+  "SQL & Database Developer",
+  "AI & Embedded Systems Engineer"
 ];
 
 export default function Hero({ isDark }) {
