@@ -1,3 +1,4 @@
+
 export const portfolioData = {
   personalInfo: {
     name: "Kaustubh Dattatray Shinde",
@@ -11,7 +12,6 @@ export const portfolioData = {
     socials: {
       github: "https://github.com/Kaustubhshinde17",
       linkedin: "https://www.linkedin.com/in/kaustubh-shinde03",
-      dockerhub: "https://hub.docker.com/u/kaustubhshinde03",
       email: "mailto:kdshinde175@gmail.com"
     },
     aboutMe: [
