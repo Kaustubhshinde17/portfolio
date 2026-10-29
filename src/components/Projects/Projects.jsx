@@ -35,7 +35,7 @@ export default function Projects() {
     { text: "Hi! I am Kaustubh's portfolio assistant. Ask me anything about his skills, projects, or education!", isUser: false }
   ]);
 
-  const filters = ['All', 'AI & Embedded', 'Frontend'];
+  const filters = ['All', 'Full Stack', 'AI & Embedded', 'Frontend'];
 
   const filteredProjects = activeFilter === 'All'
     ? portfolioData.projects
@@ -178,8 +178,8 @@ export default function Projects() {
       reply = "Kaustubh has strong hands-on development experience in Java, Spring Boot, Object-Oriented Programming, and SQL database design.";
     } else if (q.includes('react') || q.includes('frontend') || q.includes('tailwind') || q.includes('javascript')) {
       reply = "On the frontend, he builds responsive user interfaces using React, JavaScript, HTML5, CSS3 (Flexbox/Grid), and Vite.";
-    } else if (q.includes('project') || q.includes('amazon') || q.includes('car') || q.includes('rc vehicle') || q.includes('youtube') || q.includes('chatbot')) {
-      reply = "His projects include: 1) AI-Powered Autonomous RC Car (Raspberry Pi, Flask, OpenCV, Gemini API, GPIO), 2) Amazon Clone (Vanilla JS, HTML5, CSS3, Jasmine unit tests), 3) Responsive YouTube Clone, and 4) React Chatbot.";
+    } else if (q.includes('project') || q.includes('gameshop') || q.includes('cafe') || q.includes('amazon') || q.includes('car') || q.includes('rc vehicle') || q.includes('youtube') || q.includes('chatbot')) {
+      reply = "His projects include: 1) GameShop Gaming Café Booking System (Java 21, Spring Boot, React, MySQL), 2) AI-Powered Autonomous RC Car (Raspberry Pi, Flask, OpenCV, Gemini API, GPIO), 3) Amazon Clone (Vanilla JS, Jasmine unit tests), 4) Responsive YouTube Clone, and 5) React Chatbot.";
     } else if (q.includes('gpa') || q.includes('education') || q.includes('college') || q.includes('degree')) {
       reply = "He earned his B.E. in Electronics & Telecommunication from Savitribai Phule Pune University (ISBM College of Engineering). Term GPAs: FY 7.59 | SY 9.11 | TY 8.80 | BE 9.18.";
     } else if (q.includes('contact') || q.includes('email') || q.includes('phone') || q.includes('social')) {

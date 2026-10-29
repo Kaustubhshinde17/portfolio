@@ -22,7 +22,7 @@ export const portfolioData = {
     ]
   },
   stats: [
-    { label: "Projects Completed", value: "4", color: "from-violet-500 to-indigo-500" },
+    { label: "Projects Completed", value: "5", color: "from-violet-500 to-indigo-500" },
     { label: "Technical Skills", value: "12+", color: "from-indigo-500 to-blue-500" },
     { label: "Research Publications", value: "2", color: "from-blue-500 to-cyan-500" },
     { label: "Certifications", value: "3", color: "from-cyan-500 to-emerald-500" }
@@ -68,6 +68,23 @@ export const portfolioData = {
     ]
   },
   projects: [
+    {
+      id: "gameshop",
+      title: "GameShop | Gaming Café Booking System",
+      category: "Full Stack",
+      tech: ["Java 21", "Spring Boot", "Spring Security", "React", "MySQL", "JDBC"],
+      description: "Developed a full-stack gaming café booking system with a React customer booking interface and an administrative dashboard for managing bookings and gaming stations.",
+      highlights: [
+        "Developed a full-stack gaming café booking system with a React customer booking interface and an administrative dashboard for managing bookings and gaming stations.",
+        "Implemented REST endpoints for creating, retrieving, confirming and cancelling bookings, with validation for booking rules and station availability.",
+        "Built station-assignment logic to allocate an available operational station when an admin confirms a booking, and release the assignment when a booking is cancelled.",
+        "Integrated MySQL through JDBC and configured Spring Security for session-based admin authentication, role-based authorization and CSRF protection."
+      ],
+      links: {
+        github: "https://github.com/Kaustubhshinde17",
+        demo: "#"
+      }
+    },
     {
       id: "rc-vehicle",
       title: "AI-Powered Autonomous RC Car | Voice Control & Navigation",
